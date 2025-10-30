@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it_IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offerte</title>
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="css/offerte.css" rel="stylesheet">
+<style>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </style>
+</head>
+
+<body style="margin:0%;" >
+  <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
+     
+    <div class="div1">
+      <a href="index.html" style="text-decoration: none;">
+      <img src="imagewebp/logo.webp" alt="logo"  class="logos"  style="width: 200px;">
+      </a>
+       <span class="hide"  onclick="openNav()"><img src="icons/menu.svg" style=" width: 40px; margin-bottom: 1%;"></span>
+      <a id="hotel" class="a1" href="Hotel.html">Hotel</a>
+      <a class="a2"    href="Camere.html">Camere</a>
+      <a  class="a2"  href="servizi.html" >Servizi</a>
+       <div class="dropdown"><a class="dropbtn" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a href="eventi.html">Eventi</a></div></div>
+      <div class="dropdown"><a class="dropbtn" href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html">Da visitare</a></div></div>
+      <a class="a2"  href="gallery.html" >Gallery</a>
+      <a  class="a3" >Offerte</a>
+      <a  class="a2"  >Prenota</a>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <select style="margin-left: 35px; width: 70px ">
+   <option>IT</option>
+   <option>ENG</option>
+   
+
+  </select>
+
+  
+  <a class="a3"   href="#">Hotel</a>
+  <a class="a3"  href="#">Camere</a>
+  <a class="a3" href="#">Servizi</a>
+  <a class="a3">Ristorante</a>
+  <a class="a3">Eventi</a>
+  <a class="a3">Dove siamo</a>
+  <a class="a3">Da visitare</a>
+  <a class="a3"  href="#">Gallery</a>
+  <a  class="a3" >Offerte</a>
+</div>
+      <select class="select1">
+     
+      <option value="" >ITA</option>
+      <option value="">ENG</option>
+      
+      </select>
+   
+   </select>
+    </div>
+    
+    <img src="offerte2.webp" style="width: 100%; height: 10%;">
+<div class="div2">Offerte</div>  
+    
+<div id="the_place_where_iframe_will_be_installed"></div>
+
+
+
+<div class="div3">
+<img src="imagewebp/logofooter.png" class="img1">
+  <div class="div4">Corso Giuseppe Garibaldi, 89844, Nicotera Marina, Calabria, Italy</div>  
+  <div class="div4" >tel: <a href="tel:+39 0963 81269" style="color: #c6a310; text-decoration: none;"> +39 0963 81269</a>   </div> 
+  <div  class="div4" >email: <a href="mailto:info@anticamarina.com" style="color: #c6a310; text-decoration: none;"> info@anticamarina.com</a>   </div>  
+   <div class="div4">P.Iva: 03604360796</div> 
+   
+   <div class="div5">
+   <a href="contatti.html" class="a5" > Contatti</a> 
+    <a href="privacy.html" class="a5" > Privacy</a>
+    <a href="#" class="a5"  > Cookie Policy</a>
+    <a href="datisocietari.html" class="a5"> Dati societari</a>
+    <a href="#" class="a5" > Accessibilità</a>
+   </div>
+
+   <div class="div7">
+    <a href="https://www.instagram.com/anticamarinahotelristorante/" style="text-decoration: none;">
+    <img src="icons/Instagram.svg" alt="Instagram" style="width: 30px; margin-left: 5px;">
+    </a>
+    <a href="https://www.facebook.com/anticamarinaristorantehotel/?locale=it_IT" style="text-decoration: none;">
+    <img src="icons/Facebook.png" alt="Facebook" style="width: 30px; margin-left: 10px;">
+    </a>
+    
+   </div>
+   
+</div> 
+</div>
+</body>
+<script>
+
+  var url= 'https://wubook.net/nneb/bk?f=today&n=1&ep=ede5c73f&o=1.0.0.0';
+  var target= '#the_place_where_iframe_will_be_installed';
+  var Neb= new ZakNebIframe(target, url);
+  Neb.render();
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+window.addEventListener('resize', () => {
+  console.log(window.innerWidth);
+});
+
+
+
+</script>
+</html>

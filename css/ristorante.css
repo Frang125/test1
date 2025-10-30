@@ -1,0 +1,4593 @@
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #0c3583; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: 2px 2px 5px black;  
+  color: #c6a310;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+  width: 100px;
+  height: auto;
+ 
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+ 
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #c6a310;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.dropbtn {
+  
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+@media screen and (min-width: 1920px) {
+.hide{
+    display: none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+  
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 26%; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 20%;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+
+}
+
+
+.div7{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+
+
+}
+
+.div11{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+
+
+}
+
+
+
+.div15{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    color: #0c3583;
+    font-family: 'Lora', serif; 
+    margin-left: 900px; 
+    text-decoration: none;
+
+
+}
+
+
+.a2{
+color: #0c3583;
+font-family: 'Lora', serif; 
+margin-left: 1%; 
+text-decoration: none;
+
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 58%; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 50%; 
+    text-align: left;
+
+
+}
+
+}
+
+
+
+@media screen and (min-width: 1800px) and (max-width:1920px) {
+.hide{
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+  
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 26%; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 20%;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+
+}
+
+
+.div7{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+
+
+}
+
+.div11{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+
+
+}
+
+
+
+.div15{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    color: #0c3583;
+    font-family: 'Lora', serif; 
+    margin-left: 850px; 
+    text-decoration: none;
+
+
+}
+
+
+.a2{
+color: #0c3583;
+font-family: 'Lora', serif; 
+margin-left: 1%; 
+text-decoration: none;
+
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 58%; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 50%; 
+    text-align: left;
+
+
+}
+}
+
+
+@media screen and (min-width: 1700px) and (max-width:1800px) {
+.hide{
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+  
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 26%; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 20%;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+
+}
+
+
+.div7{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+
+
+}
+
+.div11{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+
+
+}
+
+
+
+.div15{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    color: #0c3583;
+    font-family: 'Lora', serif; 
+    margin-left: 750px; 
+    text-decoration: none;
+
+
+}
+
+
+.a2{
+color: #0c3583;
+font-family: 'Lora', serif; 
+margin-left: 1%; 
+text-decoration: none;
+
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 58%; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 50%; 
+    text-align: left;
+
+
+} 
+
+}
+
+
+@media screen and (min-width: 1600px) and (max-width:1700px) {
+
+.hide{
+    display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+  
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 26%; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 20%;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+
+}
+
+
+.div7{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+
+
+}
+
+.div11{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+
+
+}
+
+
+
+.div15{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    color: #0c3583;
+    font-family: 'Lora', serif; 
+    margin-left: 650px; 
+    text-decoration: none;
+
+
+}
+
+
+.a2{
+color: #0c3583;
+font-family: 'Lora', serif; 
+margin-left: 1%; 
+text-decoration: none;
+
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 58%; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 50%; 
+    text-align: left;
+
+
+} 
+
+
+}
+
+@media screen and (min-width: 1500px) and (max-width:1600px) {
+.hide{
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+  
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 26%; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 20%;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+
+}
+
+
+.div7{
+width: 280px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+
+
+}
+
+.div11{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+
+
+}
+
+
+
+.div15{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 480px; /* Set the box width */
+      height: 400px; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    color: #0c3583;
+    font-family: 'Lora', serif; 
+    margin-left: 550px; 
+    text-decoration: none;
+
+
+}
+
+
+.a2{
+color: #0c3583;
+font-family: 'Lora', serif; 
+margin-left: 1%; 
+text-decoration: none;
+
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 58%; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 50%; 
+    text-align: left;
+
+
+} 
+
+}
+
+
+@media screen and (min-width: 1400px) and (max-width:1500px) {
+.hide{
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+  
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 26%; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 20%;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+}
+
+
+.div7{
+width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+
+}
+
+.div11{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+
+
+.div15{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 380px; /* Set the box width */
+      height:  fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    color: #0c3583;
+    font-family: 'Lora', serif; 
+    margin-left: 500px; 
+    text-decoration: none;
+
+
+}
+
+
+.a2{
+color: #0c3583;
+font-family: 'Lora', serif; 
+margin-left: 1%; 
+text-decoration: none;
+
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 58%; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 50%; 
+    text-align: left;
+
+
+} 
+
+}
+
+
+@media screen and (min-width: 1300px) and (max-width:1400px) {
+.logoc{
+margin-left: 523px;
+
+
+
+}
+.hide{
+margin-left: 400px;
+
+
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+    display: none;
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 26%; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 20%;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+}
+
+
+.div7{
+width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+
+}
+
+.div11{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+
+
+.div15{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 380px; /* Set the box width */
+      height:  fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    display: none;
+
+
+}
+
+
+.a2{
+display: none;
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 58%; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 50%; 
+    text-align: left;
+
+
+} 
+
+
+}
+
+
+@media screen and (min-width:1200px) and (max-width:1300px) {
+.logoc{
+margin-left: 473px;
+
+
+
+}
+.hide{
+margin-left: 400px;
+
+
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+    display: none;
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 180px; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 290px;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+}
+
+
+.div7{
+width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+
+}
+
+.div11{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+
+
+.div15{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 380px; /* Set the box width */
+      height:  fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 380px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    display: none;
+
+
+}
+
+
+.a2{
+display: none;
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 800px; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 800px; 
+    text-align: left;
+
+
+} 
+
+}
+
+
+
+@media screen and (min-width: 1100px) and (max-width:1200px){
+.logoc{
+margin-left: 423px;
+
+
+
+}
+.hide{
+margin-left: 300px;
+
+
+
+}
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+    display: none;
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 180px; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 250px;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+}
+
+
+.div7{
+width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+
+}
+
+.div11{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+
+
+.div15{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 320px; /* Set the box width */
+      height:  fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    display: none;
+
+
+}
+
+
+.a2{
+display: none;
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 800px; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 800px; 
+    text-align: left;
+
+
+} 
+
+}
+
+
+@media screen and (min-width: 1000px) and (max-width:1100px){
+.logoc{
+margin-left: 373px;
+
+
+
+}
+.hide{
+margin-left: 300px;
+
+
+
+}
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+    display: none;
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 100px; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 280px;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+}
+
+
+.div7{
+width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+
+}
+
+.div11{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+
+
+.div15{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 320px; /* Set the box width */
+      height:  fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 320px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    display: none;
+
+
+}
+
+
+.a2{
+display: none;
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 800px; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 800px; 
+    text-align: left;
+
+
+} 
+
+}
+
+@media screen and (min-width: 800px) and (max-width:1000px){
+.logoc{
+margin-left: 273px;
+
+
+
+}
+.hide{
+margin-left: 200px;
+
+
+
+}
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+    display: none;
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 10px; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 280px;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+}
+
+
+.div7{
+width: 260px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 260px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div9{
+    width: 260px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: row;
+margin-bottom: 10px;
+
+
+}
+
+.div11{
+    width: 260px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 260px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+
+}
+
+.div13{
+    width: 260px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+
+
+.div15{
+    width: 260px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 260px; /* Set the box width */
+      height:  fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-left: 1%;
+
+}
+
+
+.div17{
+    width: 260px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-left: 1%;
+
+
+}
+
+
+.a1{
+    display: none;
+
+
+}
+
+
+.a2{
+display: none;
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 720px; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 720px; 
+    text-align: left;
+
+
+} 
+}
+
+
+@media screen and (min-width: 600px) and (max-width:800px){
+.logoc{
+margin-left: 180px;
+
+
+
+}
+.hide{
+margin-left: 100px;
+
+
+
+}
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+    .dropbtn {
+    display: none;
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 10px; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 180px;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: column;
+margin-bottom: 10px;
+
+}
+
+
+.div7{
+width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      
+
+
+}
+
+.div9{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: column;
+margin-bottom: 10px;
+
+
+}
+
+.div11{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+     
+
+}
+
+.div13{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+    
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+
+
+.div15{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 460px; /* Set the box width */
+      height:  fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-bottom: 10px;
+
+}
+
+
+.div17{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-bottom: 10px;
+
+
+}
+
+
+.a1{
+    display: none;
+
+
+}
+
+
+.a2{
+display: none;
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 570px; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 570px; 
+    text-align: left;
+
+
+} 
+
+
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 600px){
+.logoc{
+margin-left: 123px;
+
+
+
+}
+.hide{
+margin-left: 60px;
+
+
+
+}
+
+
+
+.prev, .next {
+    display: none;
+}
+
+
+
+
+    .dropbtn {
+    display: none;
+  color: #0c3583;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  background-color: #0c3583;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.div1{
+position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #ffffffce;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+
+
+
+}
+
+.div2{
+margin-left: 10px; 
+padding-bottom: 100px;
+
+
+
+
+}
+
+.div3{
+text-align:left; 
+font-size: 45px; 
+color: #c6a310; 
+font-family: 'Lora', serif;
+
+
+
+}
+
+.div4{
+border: 0px solid  #bbbbbb00;
+ margin-top: 20px; 
+ background-color: #0c3583;  
+ width: fit-content;  
+ padding: 11px 20px; 
+ height: 40px;    
+ margin-left: 120px;
+
+
+}
+
+.div5{
+display: flex; 
+flex-direction: column; 
+align-items: center;
+
+
+    
+}
+
+
+.div6{
+display: flex; 
+flex-direction: column;
+margin-bottom: 10px;
+
+}
+
+
+.div7{
+width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+
+}
+
+.div8{
+width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      
+
+
+}
+
+.div9{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      
+
+
+}
+
+
+.div10{
+display: flex; 
+flex-direction: column;
+margin-bottom: 10px;
+
+
+}
+
+.div11{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+.div12{
+width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+     
+
+}
+
+.div13{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+    
+
+
+}
+
+.div14{
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+
+
+.div15{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+
+
+}
+
+
+.div16{
+width: 460px; /* Set the box width */
+      height:  fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden;
+      margin-bottom: 10px;
+
+}
+
+
+.div17{
+    width: 460px; /* Set the box width */
+      height: fit-content; /* Set the box height */
+      /* Add a border to the box */
+      
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      overflow: hidden; 
+      margin-bottom: 10px;
+
+
+}
+
+
+.a1{
+    display: none;
+
+
+}
+
+
+.a2{
+display: none;
+
+}
+
+.p1{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+
+.p2{
+    text-align:left; 
+    font-size: 19px; 
+    color: black; 
+    font-family: 'Lora', serif;
+
+}
+
+.p3{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 450px; 
+    text-align: left;
+
+
+}
+
+.p4{
+    font-family: 'Lora', serif; 
+    font-size: 20px; 
+    text-decoration: none;
+
+
+
+}
+
+
+.p5{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px; 
+    width: 450px; 
+    text-align: left;
+
+
+} 
+
+}

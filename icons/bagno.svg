@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="24px"
+   viewBox="0 -960 960 960"
+   width="24px"
+   fill="#000000"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="bagno.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="33.625"
+     inkscape:cx="10.795539"
+     inkscape:cy="12"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m 760,-80 c 11.33333,0 20.83333,-3.833333 28.5,-11.5 7.66667,-7.666667 11.5,-17.16667 11.5,-28.5 22,0 40.83333,-7.83333 56.5,-23.5 C 872.16667,-159.16667 880,-178 880,-200 V -440 H 760 l -297.39777,0.92937 c 397.90248,-1.24345 265.8208,-1.41143 239.27881,-0.95167 C 226.08767,-431.78067 686.36276,-436.48494 240,-440 v -326 c 0,-9.33333 3.33333,-17.33333 10,-24 6.66667,-6.66667 14.66667,-10 24,-10 4,0 7.83333,0.83333 11.5,2.5 3.66667,1.66667 7.16667,4.16667 10.5,7.5 l 50,50 c -3.33333,11.33333 -4,22.5 -2,33.5 2,11 6,21.16667 12,30.5 l 110,-112 c -9.33333,-6 -19.33333,-9.83333 -30,-11.5 -10.66667,-1.66667 -21.33333,-0.5 -32,3.5 l -50,-50 c -10.66667,-10.66667 -22.83333,-19 -36.5,-25 -13.66667,-6 -28.16667,-9 -43.5,-9 -32,0 -59,11 -81,33 -22,22 -33,49 -33,81 v 326 H 80 v 240 c 0,22 7.83333,40.83333 23.5,56.5 15.66667,15.66667 34.5,23.5 56.5,23.5 0,11.33333 3.83333,20.833333 11.5,28.5 7.66667,7.666667 17.16667,11.5 28.5,11.5 z m 40,-120 H 160 v -160 h 640 z m 0,0 H 160 Z"
+     id="path1"
+     sodipodi:nodetypes="sscssccsscssssscsccscsssssccsscssscccccccc" />
+</svg>
