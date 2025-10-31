@@ -13,32 +13,50 @@
 
 </head>
 <body style="margin:0%;" >
+    <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
     <div class="div1">
+      <span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
       <a href="index.html" style="text-decoration: none;">
       <img src="imagewebp/logo.webp" class="logoc"  alt="logo" style="width: 200px;">
       </a>
+      <a onclick="go1()">
+        <img src="icons/prenota.svg" alt="logo"  class="icop" style="width: 35px;">
+      </a>
+      
+        <button id="buttone"  class="rp1" style="font-size:25px;font-family: 'Lora', serif; color: #c6a310;  background: transparent;  border: none !important; "  onclick="go1()">
+       
+        Prenota & Risparmia
+        </button>
       <a id="hotel"  class="a1" href="Hotel.html">Hotel</a>
-      <a  class="a2"  href="Camere.html">Camere</a>
-      <a  class="a2"  href="servizi.html" >Servizi</a>
-       <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a href="eventi.html">Eventi</a></div></div>
-      <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none; " href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html">Da visitare</a></div></div>
+      <a  class="a2" id="room" href="Camere.html">Camere</a>
+      <a  class="a2" id="service" href="servizi.html" >Servizi</a>
+       <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;" id="risto" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a id="eve" href="eventi.html">Eventi</a></div></div>
+      <div class="dropdown"><a class="dropbtn" id="where" style="font-family: 'Lora'; color: #0c3583; text-decoration: none; " href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html" id="visit">Da visitare</a></div></div>
       <a  class="a3"  >Gallery</a>
-      <a  class="a2"   href="offerte.html" >Offerte</a>
-      <a  class="a2"   >Prenota</a>
+      <a  class="a2"  id="deal"  href="offerte.html" >Offerte</a>
+      
+        <figure  class="reserv" >
+       <a onclick="go1()">
+       <img src="icons/prenota.svg" alt="logo"  style="width: 50px;">
+       <figcaption style=" color: #c6a310; " id="buttone2" >Prenota</figcaption>
+       </a>
+   </figure>
+      
+      
       <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a class="a4"   href="#">Hotel</a>
-      <a class="a4"  href="#">Camere</a>
-      <a class="a4" href="#">Servizi</a>
-      <a class="a4">Ristorante</a>
-      <a class="a4">Eventi</a>
-      <a class="a4">Dove siamo</a>
-      <a class="a4">Da visitare</a>
-      <a class="a4"  href="#">Gallery</a>
-      <a  class="a4" >Offerte</a>
-</div>
+      <a class="a4"    href="Hotel.html">Hotel</a>
+      <a class="a4" id="room2"  href="Camere.html">Camere</a>
+      <a class="a4" id="service2" href="servizi.html">Servizi</a>
+      <a class="a4" id="risto2" href="ristorante.html" >Ristorante</a>
+      <a class="a4" id="eve2" href="eventi.html" >Eventi</a>
+      <a class="a4"  id="where2" href="dovesiamo.html" >Dove siamo</a>
+      <a class="a4" id="visit2" href="davisitare.html">Da visitare</a>
+      <a class="a4"  href="gallery.html">Gallery</a>
+      <a  class="a4" id="deal2" href="offerte.html"  >Offerte</a>
+      </div>
       
-<span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
+
 
       
    
@@ -58,7 +76,7 @@
 
 
 <div class="div2">
-        <p class="p1">Dove siamo</p>
+        <p class="p1">Gallery</p>
         <div class="div3">
 <div class="div4">
 <div class="div5">
@@ -151,7 +169,16 @@
 
 </div>
 
+
 </div>
+
+
+<div style="height: 100px;" id="gothere"></div>
+<div id="the_place_where_iframe_will_be_installed"></div>
+<p id="promo"  class="p4">Se prenoti direttamente con noi, riceverai uno sconto sul prezzo finale. In caso di cancellazione, ti verrà rilasciato un voucher valido fino al prossimo anno.</p>
+
+
+
 
 <div style="width: 100%; height: auto;background-color: #0c3583; ">
 <img src="imagewebp/logofooter.png" style="width: 200px;display: block; padding-top: 10px;
@@ -163,11 +190,11 @@
    <div style="text-align: center; padding-top: 10px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: small;">P.Iva: 03604360796</div> 
    
    <div style="text-align: center; padding-top: 30px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: medium;">
-   <a href="contatti.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Contatti</a> 
+   <a href="contatti.html" id="contatti" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Contatti</a> 
     <a href="privacy.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Privacy</a>
     <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Cookie Policy</a>
-    <a href="datisocietari.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Dati societari</a>
-    <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Accessibilità</a>
+    <a href="datisocietari.html" id="info" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Dati societari</a>
+    <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;" id="acce"> Accessibilità</a>
    </div>
 
    <div style="text-align: center; padding-top: 30px; padding-bottom: 10px;">
@@ -184,25 +211,5 @@
 </div>
   
 </body>
-<script>
-
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-    
-
-
-
-
-</script>
+<script src="js/gallery.js"></script>
 </html>

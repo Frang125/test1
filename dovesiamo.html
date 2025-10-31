@@ -10,50 +10,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="css/dovesiamo.css" rel="stylesheet">
-<style>
 
-     </style>
 </head>
+<script src="https://wubook.net/js/nebi/iframe.jgz"></script>
 <body style="margin:0%;" >
     <div class="div1">
+        <span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 10px;"></span>
       <a href="index.html" style="text-decoration: none;">
       <img src="imagewebp/logo.webp" class="logoc"  alt="logo" style="width: 200px;">
       </a>
-      <span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 10px;"></span>
+    <a onclick="go1()">
+        <img src="icons/prenota.svg" alt="logo"  class="icop" style="width: 35px;">
+      </a>
+      
+        <button id="buttone"  class="rp1" style="font-size:25px;font-family: 'Lora', serif; color: #c6a310;  background: transparent;  border: none !important; "  onclick="go1()">
+       
+        Prenota & Risparmia
+        </button>
       <a id="hotel"  class="a1">Hotel</a>
-      <a class="a2"   href="Camere.html" >Camere</a>
-      <a class="a2"  href="servizi.html" >Servizi</a>
-       <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a href="eventi.html">Eventi</a></div></div>
-      <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #c6a310; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; ">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html">Da visitare</a></div></div>
+      <a class="a2" id="room"  href="Camere.html" >Camere</a>
+      <a class="a2" id="service"  href="servizi.html" >Servizi</a>
+       <div class="dropdown"><a id="risto" class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a href="eventi.html" id="eve">Eventi</a></div></div>
+      <div class="dropdown"><a id="where" class="dropbtn" style="font-family: 'Lora'; color: #c6a310; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; ">Dove siamo</a><div class="dropdown-content"><a id="visit" href="davisitare.html">Da visitare</a></div></div>
       <a class="a2"  href="gallery.html" >Gallery</a>
-      <a class="a2"  href="offerte.html" >Offerte</a>
-      <a class="a2"  >Prenota</a>
+      <a class="a2" id="deal" href="offerte.html" >Offerte</a>
+    
+       <figure  class="reserv" >
+       <a onclick="go1()">
+       <img src="icons/prenota.svg" alt="logo"  style="width: 50px;">
+       <figcaption style=" color: #c6a310; " id="buttone2" >Prenota</figcaption>
+       </a>
+   </figure>  
       <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <select style="margin-left: 35px; width: 70px ">
-   <option>IT</option>
-   <option>ENG</option>
-   
 
-  </select>
-  <a class="a3"   href="#">Hotel</a>
-  <a class="a3"  href="#">Camere</a>
-  <a class="a3" href="#">Servizi</a>
-  <a class="a3">Ristorante</a>
-  <a class="a3">Eventi</a>
-  <a class="a3">Dove siamo</a>
-  <a class="a3">Da visitare</a>
-  <a class="a3"  href="#">Gallery</a>
-  <a  class="a3" >Offerte</a>
+  <a class="a3"   href="Hotel.html">Hotel</a>
+  <a class="a3" id="room2" href="Camere.html">Camere</a>
+  <a class="a3" id="service2"  href="servizi.html">Servizi</a>
+  <a class="a3"  id="risto2"  href="ristorante.html">Ristorante</a>
+  <a class="a3" id="eve2" href="eventi.html" >Eventi</a>
+  <a class="a3" id="where2" href="dovesiamo.html"   >Dove siamo</a>
+  <a class="a3" id="visit2" href="davisitare.html"   >Da visitare</a>
+  <a class="a3"  href="gallery.html">Gallery</a>
+  <a  class="a3" id="deal2" href="offerte.html" >Offerte</a>
 </div>
       
 
-      <select  class="select1">
-     
-      <option value="" >ITA</option>
-      <option value="">ENG</option>
       
-      </select>
    
    </select>
     </div>
@@ -98,12 +101,12 @@
     
 
 <div style="align-items: center;">
-        <p class="p1">Dove siamo</p>
+        <p class="p1" id="p0t">Dove siamo</p>
         <p class="p2" >Corso Giuseppe Garibaldi, 89844, Nicotera Marina, Calabria</p>
-        <p class="p3">
+        <p id="p1t" class="p3">
          A pochi metri dal mare cristallino per una vacanza all'insegna del relax.  
         </p>
-        <p class="p4">
+        <p id="p2t" class="p4">
         A meno di 200 metri dal mare raggiungibile a piedi, percorrendo il Corso principale del paese. 
         </p>
 
@@ -111,6 +114,13 @@
 <iframe   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4287.345598525144!2d15.932536445541102!3d38.546580404495906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13150d2e39e9225f%3A0x537924ae192b240a!2sHotel%20Ristorante%20Antica%20Marina!5e0!3m2!1sit!2sit!4v1756569537600!5m2!1sit!2sit"  class="i1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
      
    
+<div style="height: 100px;" id="gothere"></div>
+<div id="the_place_where_iframe_will_be_installed"></div>
+<p id="promo"  class="p5">Se prenoti direttamente con noi, riceverai uno sconto sul prezzo finale. In caso di cancellazione, ti verrà rilasciato un voucher valido fino al prossimo anno.</p>
+
+
+
+
 
  
 
@@ -122,11 +132,11 @@
    <div class="div3">P.Iva: 03604360796</div> 
    
    <div class="div4">
-   <a href="contatti.html" class="a3" > Contatti</a> 
+   <a href="contatti.html" class="a3" id="contatti" > Contatti</a> 
     <a href="privacy.html" class="a3" > Privacy</a>
     <a href="#" class="a3" > Cookie Policy</a>
-    <a href="datisocietari.html" class="a3" > Dati societari</a>
-    <a href="#" class="a3" > Accessibilità</a>
+    <a href="datisocietari.html" id="info" class="a3" > Dati societari</a>
+    <a href="#" class="a3" id="acce" > Accessibilità</a>
    </div>
 
    <div style="text-align: center; padding-top: 30px; padding-bottom: 10px;">
@@ -142,72 +152,5 @@
 </div> 
 </div>
 </body>
-<script>
-
-
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-
-let slideIndex = 0;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-  
-}
-
-showSlides2();
-
-function showSlides2() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  let dots = document.getElementsByClassName("dot");
-
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides2, 10000); // Change image every 2 seconds
-}
- 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-   
-}
-
-
-</script>
+<script src="js/dovesiamo.js"></script>
 </html>
