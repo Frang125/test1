@@ -6,6 +6,10 @@ var url= 'https://wubook.net/nneb/bk?f=today&n=1&ep=ede5c73f&o=1.0.0.0';
 var userLang = navigator.language || navigator.userLanguage;
 console.log(userLang);
 if(userLang == "it-IT" || userLang=="it"){
+
+
+
+}else{
 document.getElementById("buttone").innerHTML="book and save";
 document.getElementById("room").innerHTML="Rooms";
 document.getElementById("service").innerHTML="Service";
@@ -25,6 +29,23 @@ document.getElementById("eve2").innerHTML="Events";
 document.getElementById("where2").innerHTML="Find us";
 document.getElementById("visit2").innerHTML="Places to visit";
 document.getElementById("deal2").innerHTML="Deals";
+
+/* Corpo sito */
+document.getElementById("p1t").innerHTML="Company info";
+document.getElementById("p2t").innerHTML="Company name:";
+document.getElementById("p3t").innerHTML="Registered office:";
+document.getElementById("p4t").innerHTML="Social capital:";
+document.getElementById("p5t").innerHTML="Certified email:";
+document.getElementById("promo").innerHTML="If you book directly with us, you will receive a discount on the final price. In case of cancellation, you will be issued a voucher valid until next year.";
+
+/* fine corpo sito */
+
+document.getElementById("contatti").innerHTML="Contacts";
+document.getElementById("info").innerHTML="Company info";
+document.getElementById("acce").innerHTML="Accessibility"
+
+
+
 
 
 

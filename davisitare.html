@@ -10,40 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="css/davisitare.css" rel="stylesheet">
-<style>
-        
 
-
-
-     </style>
 </head>
+  <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
 <body style="margin:0%;" >
     <div class="div1">
+      <span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
       <a href="index.html" style="text-decoration: none;">
       <img src="imagewebp/logo.webp" class="logoc" alt="logo" style="width: 200px;">
       </a>
-      <a id="hotel" class="a1" href="Hotel.html">Hotel</a>
-      <a  class="a2"   href="Camere.html">Camere</a>
-      <a  class="a2"  href="servizi.html" >Servizi</a>
-       <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a href="eventi.html">Eventi</a></div></div>
-      <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #c6a310; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; " href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a>Da visitare</a></div></div>
+       <a onclick="go1()">
+        <img src="icons/prenota.svg" alt="logo"  class="icop" style="width: 35px;">
+      </a>
+      
+        <button id="buttone"  class="rp1" style="font-size:25px;font-family: 'Lora', serif; color: #c6a310;  background: transparent;  border: none !important; "  onclick="go1()">
+       
+        Prenota & Risparmia
+        </button>
+      <a id="hotel"  class="a1" href="Hotel.html">Hotel</a>
+      <a  class="a2"  id="room" href="Camere.html">Camere</a>
+      <a  class="a2"  id="service" href="servizi.html" >Servizi</a>
+       <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;"  id="risto"  href="ristorante.html">Ristorante</a><div class="dropdown-content"><a  id="eve" href="eventi.html">Eventi</a></div></div>
+      <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #c6a310; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; " id="where" href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"   id="visit"><a>Da visitare</a></div></div>
       <a  class="a2"  href="gallery.html" >Gallery</a>
-      <a  class="a2"   href="offerte.html" >Offerte</a>
-      <a  class="a2"   >Prenota</a>
+      <a  class="a2"  id="deal"  href="offerte.html" >Offerte</a>
+     
       <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a class="a3"   href="#">Hotel</a>
-  <a class="a3"  href="#">Camere</a>
-  <a class="a3" href="#">Servizi</a>
-  <a class="a3">Ristorante</a>
-  <a class="a3">Eventi</a>
-  <a class="a3">Dove siamo</a>
-  <a class="a3">Da visitare</a>
-  <a class="a3"  href="#">Gallery</a>
-  <a  class="a3" >Offerte</a>
+  <a class="a3"   href="Hotel.html">Hotel</a>
+  <a class="a3" id="room2" href="Camere.html">Camere</a>
+  <a class="a3" id="service2" href="servizi.html">Servizi</a>
+  <a class="a3" id="risto2" href="ristorante.html">Ristorante</a>
+  <a class="a3"  id="eve2"  href="eventi.html">Eventi</a>
+  <a class="a3" id="where2"  href="dovesiamo.html"  >Dove siamo</a>
+  <a class="a3" id="visit2" href="davisitare.html"  >Da visitare</a>
+  <a class="a3"  href="gallery.html">Gallery</a>
+  <a  class="a3" id="deal2" href="offerte.html">Offerte</a>
 </div>
-      
-<span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
+
+    <figure  class="reserv" >
+       <a onclick="go1()">
+       <img src="icons/prenota.svg" alt="logo"  style="width: 50px;">
+       <figcaption style=" color: #c6a310; " id="buttone2" >Prenota</figcaption>
+       </a>
+   </figure>      
+
      
 
     </div>
@@ -87,8 +98,8 @@
 </div>
     
 <div class="div2">
-<div class="div3">Da visitare</div>
-<p class="p1">
+<div class="div3"  id="div1t">Da visitare</div>
+<p class="p1" id="p1t">
 Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomata località turistica e <b>Città della Dieta mediterranea di Riferimento</b>. Intorno a noi moltissime sono le località turistiche che vale la pena visitare, a cominciare dall’incantevole TROPEA, <b>Borgo dei Borghi 2021</b>, proseguendo verso PIZZO CALABRO, famosa per il suo <b>Tartufo Gelato</b> e ancora MONTE PORO ed i suoi Prodotti Tipici (la <b>‘Nduja</b> ed il <b>Pecorino in primis</b>) ed il Santuario di Natuzza a Paravati. Proseguendo verso sud bisogna assolutamente visitare SCILLA, la piccola Venezia del sud e REGGIO CALABRIA con il suo chilometro più bello d’Italia.
 </p>
 
@@ -101,24 +112,25 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
     
     <div class="div7">
     <p class="p2">Nicotera</p>
-     Vista dal mare
-  
+    
   </div>
   </div>
   <div class="div6"  style=" background-image: url('imagewebp/1024-nicotera-22.webp');margin-left: 1%;">
     
     <div class="div7" >
     <p class="p2">Nicotera</p>
-     Vicolo degli ombrelli
-  
+    
   </div>
+
+
+    
   </div>
  
   <div class="div6" style="background-image: url('imagewebp/1024-nicotera-panorama.webp'); margin-left: 1%;">
     
     <div class="div7">
     <p class="p2">Nicotera</p>
-     Panorama
+  
   
   </div>
   </div>
@@ -131,7 +143,7 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
     
     <div class="div7">
     <p class="p2">Tropea</p>
-     Borgo d'Italia 2021
+     
   
   </div>
   </div>
@@ -139,8 +151,7 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
     
     <div class="div7">
     <p class="p2">Scilla</p>
-      La spiaggia
-  
+     
   </div>
   </div>
 
@@ -148,7 +159,7 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
     
     <div class="div7" >
     <p class="p2">Scilla</p>
-      Chianalea, la piccola Venezia
+   
   
   </div>
   </div>
@@ -193,7 +204,7 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
     
     <div class="div7">
     <p class="p2">Monteporo</p>
-      L'altopiano
+     
   
   </div>
   </div>
@@ -201,7 +212,7 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
     
     <div class="div7" >
     <p class="p2">Monteporo</p>
-      La Nduja
+     
   
   </div>
   </div>
@@ -209,8 +220,7 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
     
     <div class="div7">
     <p class="p2">Paravati</p>
-      Santuario Natuzza
-  
+     
   </div>
   </div>
 
@@ -223,22 +233,21 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
     
     <div class="div7">
     <p  class="p2">Nicotera</p>
-      I lampioni innamorati
-  
+ 
   </div>
   </div>
   <div class="div6" style="background-image: url('imagewebp/1024-reggiocalabrialungomare.webp'); margin-left: 1%;">
     
     <div class="div7">
     <p class="p2" >Reggio Calabria</p>
-      Lungomare
+     
   </div>
   </div>
    <div class="div6" style="background-image: url('imagewebp/1024-bronzo.webp'); margin-left: 1%;">
     
     <div class="div7" >
     <p  class="p2">Reggio Calabria</p>
-      Bronzi di Riace
+      
   
   </div>
   </div>
@@ -255,6 +264,9 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
 </div>
 
 
+<div style="height: 100px;" id="gothere"></div>
+<div id="the_place_where_iframe_will_be_installed"></div>
+<p id="promo"  class="p4">Se prenoti direttamente con noi, riceverai uno sconto sul prezzo finale. In caso di cancellazione, ti verrà rilasciato un voucher valido fino al prossimo anno.</p>
 
 
 
@@ -273,11 +285,11 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
    <div style="text-align: center; padding-top: 10px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: small;">P.Iva: 03604360796</div> 
    
    <div style="text-align: center; padding-top: 30px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: medium;">
-   <a href="contatti.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Contatti</a> 
+   <a  id="contatti" href="contatti.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Contatti</a> 
     <a href="privacy.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Privacy</a>
     <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Cookie Policy</a>
-    <a href="datisocietari.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Dati societari</a>
-    <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Accessibilità</a>
+    <a id="info" href="datisocietari.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Dati societari</a>
+    <a href="#"  id="acce"  style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Accessibilità</a>
    </div>
 
    <div style="text-align: center; padding-top: 30px; padding-bottom: 10px;">
@@ -294,70 +306,5 @@ Antica Marina si trova a 200 metri dalla splendida spiaggia di NICOTERA, rinomat
 </div>
   
 </body>
-<script>
-  window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-
-let slideIndex = 0;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-  
-}
-
-showSlides2();
-
-function showSlides2() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  let dots = document.getElementsByClassName("dot");
-
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides2, 10000); // Change image every 2 seconds
-}
- 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-   
-}
-
-
-</script>
+<script src="js/davisitare.js"></script>
 </html>
