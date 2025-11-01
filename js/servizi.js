@@ -29,6 +29,9 @@ var userLang = navigator.language || navigator.userLanguage;
 console.log(userLang);
 
 if(userLang == "it-IT" || userLang=="it"){
+
+
+}else{
     document.getElementById("buttone").innerHTML="book and save";
 document.getElementById("room").innerHTML="Rooms";
 document.getElementById("service").innerHTML="Service";
@@ -95,6 +98,7 @@ document.getElementById("promo").innerHTML="If you book directly with us, you wi
 document.getElementById("contatti").innerHTML="Contacts";
 document.getElementById("info").innerHTML="Company info";
 document.getElementById("acce").innerHTML="Accessibility";
+
 
 }
 
