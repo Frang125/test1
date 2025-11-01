@@ -15,34 +15,48 @@
 <body style="margin:0%;" >
   <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
     <div class="div1">
+      <span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
       <a href="index.html" style="text-decoration: none;">
       <img src="imagewebp/logo.webp" class="logoc" alt="logo" style="width: 200px;">
       </a>
+      <a onclick="go1()">
+        <img src="icons/prenota.svg" alt="logo"  class="icop" style="width: 35px;">
+      </a>
+      
+        <button id="buttone" style="font-size:25px;font-family: 'Lora', serif; color: #c6a310;  background: transparent;  border: none !important; " class="a2" onclick="go1()">
+       
+        Prenota & Risparmia
+        </button>
       <a id="hotel" class="a1"   href="Hotel.html">Hotel</a>
-      <a  class="a2" href="Camere.html" >Camere</a>
-      <a  class="a2" href="servizi.html" >Servizi</a>
-       <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a href="eventi.html">Eventi</a></div></div>
-      <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none; " href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html">Da visitare</a></div></div>
+      <a  class="a2"  id="room" href="Camere.html" >Camere</a>
+      <a  class="a2" id="service" href="servizi.html" >Servizi</a>
+       <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;" href="ristorante.html" id="risto">Ristorante</a><div class="dropdown-content"><a href="eventi.html" id="eve">Eventi</a></div></div>
+      <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none; " href="dovesiamo.html" id="where">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html" id="visit">Da visitare</a></div></div>
       <a  class="a2" href="gallery.html" >Gallery</a>
-      <a  class="a2"  href="offerte.html" >Offerte</a>
-      <a  class="a2"  >Prenota</a>
+      <a  class="a2" id="deal" href="offerte.html" >Offerte</a>
+     <figure  class="reserv">
+       <a onclick="go1()">
+       <img src="icons/prenota.svg" alt="logo"  style="width: 50px;">
+       <figcaption style=" color: #c6a310; " id="buttone2">Prenota</figcaption>
+       </a>
+   </figure>
      <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   
-  <a    href="#">Hotel</a>
-  <a  href="#">Camere</a>
-  <a  href="#">Servizi</a>
-  <a >Ristorante</a>
-  <a >Eventi</a>
-  <a >Dove siamo</a>
-  <a >Da visitare</a>
-  <a href="#">Gallery</a>
-  <a  >Offerte</a>
+  <a  id="room2"  href="Hotel.html">Hotel</a>
+  <a  href="Camere.html" id="room2">Camere</a>
+  <a  href="servizi.html"  id="service2" >Servizi</a>
+  <a id="risto2"  href="ristorante.html">Ristorante</a>
+  <a id="eve2" href="eventi.html" >Eventi</a>
+  <a id="where2" href="dovesiamo.html">Dove siamo</a>
+  <a id="visit2" href="davisitare.html" >Da visitare</a>
+  <a href="gallery.html">Gallery</a>
+  <a id="deal2" href="offerte.html" >Offerte</a>
 </div>
       
-<span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
+
    
-   </select>
+  
     </div>
        
     
@@ -56,18 +70,18 @@
 
 <div style="align-items: left;">
         <p class="p1">Privacy</p>
-        <p class="p2">
+        <p class="p2" id="p1t">
 
           Hotel Ristorante ANTICA MARINA con sede Corso Giuseppe Garibaldi 89844 Nicotera Marina, (VV) Calabria – ITALY considera di fondamentale importanza la tutela dei <b> Dati Personali</b> dei propri clienti e fornitori, garantendo che il <b>Trattamento</b> degli stessi, effettuato con qualsiasi modalità sia automatizzata che manuale, avvenga nel pieno rispetto delle tutele e dei diritti riconosciuti dal Regolamento UE 2016/679 (in seguito anche <b> "GDPR"</b>), relativo alla protezione delle persone fisiche, con riguardo al Trattamento dei dati personali, nonché alla libera circolazione di tali dati e dalle ulteriori norme applicabili in tema di protezione dei dati personali.
        </p>
       
-       <p class="p2">
+       <p class="p2" id="p2t">
 
         Con il termine "dati personali" si fa riferimento alla definizione contenuta nell'art. 4, punto 1), del  <b>GDPR</b>  ossia a "qualsiasi informazione riguardante una persona fisica identificata o identificabile; si considera identificabile la persona fisica che può essere identificata, direttamente o indirettamente, con particolare riferimento a un identificativo come il nome, un numero di identificazione, dati relativi all'ubicazione, un identificativo online o a uno o più elementi caratteristici della sua identità fisica, fisiologica, genetica, psichica, economica, culturale o sociale" (in seguito anche i "Dati Personali").
         </p>
 
 
-        <p class="p2">
+        <p class="p2" id="p3t">
 
        Tuoi  <b>Dati Personali</b> sono costituiti da: <br style="padding-bottom: 1%;">
 - Nome e cognome; <br style="padding-bottom: 2%;">
@@ -79,28 +93,28 @@
       </p>
 
 
-      <p class="p3">
+      <p class="p3" id="p4t">
 Il  <b>GDPR</b>  prevede che, prima di procedere al <b>Trattamento</b> di <b>Dati Personali</b> (intendendosi, con tale definizione, ai sensi dell'art. 4, punto 2), "qualsiasi operazione o insieme di operazioni, compiute con o senza l'ausilio di processi automatizzati e applicate a Dati Personali o insiemi di dati personali, come la raccolta, la registrazione, l'organizzazione, la strutturazione, la conservazione, l'adattamento o la modifica, l'estrazione, la consultazione, l'uso, la comunicazione mediante trasmissione, diffusione o qualsiasi altra forma di messa a disposizione, il raffronto o l'interconnessione, la limitazione, la cancellazione o la distruzione" (in seguito anche il "Trattamento") è necessario che la persona a cui i Dati Personali appartengono (in seguito anche gli "Interessati"), sia informata circa i motivi per i quali, quest'ultimi, sono richiesti ed in che modo verranno utilizzati.
        
       </p>
 
-      <p class="p4">
+      <p class="p4" id="p5t">
         Il presente documento ha, quindi, lo scopo di fornirti, in maniera semplice ed intuitiva, tutte le informazioni utili e necessarie affinché tu possa conferire i Tuoi Dati Personali in modo consapevole ed informato e, ove necessario, richiedere ed ottenere chiarimenti e/o rettifiche circa quest'ultimi.
       </p>
       
  
-      <p class="p3">
+      <p class="p3" id="p6t">
         <b>1. CHI TRATTERRÀ I TUOI DATI PERSONALI?</b>
       </p>
 
-      <p class="p3">
+      <p class="p3" id="p7t">
         La società che tratterà i Tuoi <b>Dati Personali</b> per le finalità indicate alle clausole n. 2 e 3 che seguono e che, quindi, rivestirà il ruolo di <b>Titolare</b>  del  <b>Trattamento</b>, è Hotel Ristorante ANTICA MARINA con sede Corso Giuseppe Garibaldi 89844 Nicotera Marina, (VV) Calabria – ITALY - info@anticamarina.com (in seguito anche il <b>"Titolare"</b>).
       </p>
-      <p class="p3">
+      <p class="p3" id="p8t">
         <b>2. PER QUALI FINALITÀ PRINCIPALI SARANNO TRATTATI I TUOI DATI PERSONALI?</b>
       </p>
 
-      <p class="p3">
+      <p class="p3" id="p9t">
       Il Titolare ha necessità di raccogliere alcuni Tuoi <b>Dati Personali</b> per le seguenti finalità: <br><br>
 - a) erogazione dei servizi presentati sul sito web del <b>Titolare</b>, quali, ad esempio, l'ottenimento di offerte commerciali e la risposta a richieste d'informazioni anche tecniche inviate spontaneamente dall'<b>Interessato</b>;
  <br><br>    - b) per l'adempimento degli obblighi di legge, in particolare quelli contabili e fiscali, laddove venga concluso un contratto con l'<b>Interessato</b>.
@@ -108,17 +122,17 @@ Il  <b>GDPR</b>  prevede che, prima di procedere al <b>Trattamento</b> di <b>Dat
 
 
 
-      <p class="p4">
+      <p class="p4" id="p10t">
     Il <b>Trattamento</b> dei Tuoi <b>Dati Personali</b> sarà, inoltre, condotto dal <b>Titolare</b> per l'espletamento dell'attività di consulenza ed assistenza telefonica alla clientela conseguente ad una richiesta di contatto effettuata, anche tramite il sito web <a style="color: #c6a310; text-decoration: none;" href="index.html">www.anticamarina.com</a> (il <b>Sito Web</b>) Il conferimento dei Tuoi dati per le finalità di cui sopra è necessario per consentire l'erogazione dei servizi presentati sul <b>Sito Web</b> o per gestire le richieste di quotazioni o per le richieste d'informazioni o d'intervento effettuate tramite gli strumenti di contatto con il <b>Titolare</b>. L'eventuale tuo rifiuto comporterà, quindi, l'impossibilità, di avvalerti di quest'ultimi servizi.
     
       </p>
    
-      <p class="p3">
+      <p class="p3" id="p11t">
         <b>3. ULTERIORI FINALITÀ</b>
       </p>
 
 
-<p class="p4">
+<p class="p4" id="p12t">
     Il Titolare, previo Tuo consenso espresso, libero ed inequivocabile a norma dell'art. 6, comma 1, punto a), del GDPR, potrà utilizzare i Tuoi Dati Personali per le seguenti ed ulteriori finalità:
 <br><br>   - c) per verificare il livello di soddisfazione della clientela in relazione al servizio reso da parte del Titolare;
  <br><br>- d) per misurare l'efficacia e l'adeguatezza del servizio offerto tramite il Sito Web o la Chat;
@@ -129,21 +143,21 @@ Il  <b>GDPR</b>  prevede che, prima di procedere al <b>Trattamento</b> di <b>Dat
 
 
 
-    <p class="p4">
+    <p class="p4" id="p13t">
       Il Trattamento dei Tuoi Dati Personali per le finalità di cui ai punti c), d) ed e) è facoltativo e non può prescindere dall'ottenimento del Tuo consenso, che dovrà necessariamente rispettare le condizioni di cui all'art. 7 del GDPR, determinando, in questo modo, la liceità del Trattamento dei Tuoi Dati Personali.
 Le modalità di contatto finalizzate alle attività indicate ai precedenti punti c), d) ed e) potranno essere sia di tipo automatizzato (e-mail), che di tipo tradizionale (telefonate con operatore, invii postali). In ogni caso, e come nel seguito meglio precisato alla clausola n. 7, potrai in ogni momento revocare il Tuo consenso, anche in modo parziale, ad esempio acconsentendo alle sole modalità di contatto tradizionali.
       </p>  
 
-      <p class="p3">
+      <p class="p3" id="p14t">
         <b>4. A QUALI SOGGETTI POTRANNO ESSERE COMUNICATI I TUOI DATI PERSONALI?</b>
       </p>
 
 
-      <p class="p4">
+      <p class="p4" id="p15t">
   I Tuoi Dati Personali potranno essere comunicati a specifici soggetti considerati destinatari di tali Dati Personali. Sul punto Ti segnaliamo, infatti, che l'art. 4, punto 9), del GDPR, definisce come destinatario di un Dato Personale "la persona fisica o giuridica, l'autorità pubblica, il servizio o un altro organismo che riceve comunicazione di dati personali, che si tratti o meno di terzi" (in seguito anche i "Destinatari"). </p>
 
 
-<p class="p4">
+<p class="p4" id="p16t">
 In tale ottica, al fine di svolgere correttamente tutte le attività di Trattamento necessarie a perseguire le finalità di cui alla presente informativa, potranno trovarsi nella condizione di trattare i Tuoi Dati Personali i seguenti Destinatari:
 - singoli individui, dipendenti e/o collaboratori del Titolare, a cui sono state affidate specifiche e/o più attività di Trattamento sui Tuoi Dati Personali: a tali individui sono state impartite specifiche istruzioni in tema di sicurezza e corretto utilizzo dei Dati Personali (in seguito anche le "Persone Autorizzate");
 - ove richiesto per legge o per prevenire o reprimere la commissione di un reato, i Tuoi Dati Personali potranno essere comunicati ad enti pubblici od all'autorità giudiziaria. I tuoi dati non saranno oggetto di diffusione.
@@ -151,30 +165,30 @@ In tale ottica, al fine di svolgere correttamente tutte le attività di Trattame
 </p> 
 
 
-<p class="p3">
+<p class="p3"id="p17t" >
         <b>5. PER QUANTO TEMPO SARANNO TRATTATI I TUOI DATI PERSONALI?</b>
       </p>
 
-<p class="p4">
+<p class="p4" id="p18t" >
 I Tuoi Dati Personali saranno trattati dal Titolare per un periodo non superiore agli scopi per i quali, gli stessi, sono stati raccolti e successivamente trattati. <br>
 In ogni caso potrai, in ogni momento, comunicarci, in una delle modalità previste dalla presente informativa, la tua volontà di revocare il consenso ad una o tutte le finalità per le quali ti è stato chiesto. L'eventuale revoca del consenso imporrà, di fatto, al Titolare di cessare le attività di Trattamento dei Tuoi Dati Personali per tali finalità.
 </p> 
 
-<p class="p3">
+<p class="p3" id="p19t">
         <b>6. È POSSIBILE REVOCARE IL CONSENSO PRESTATO ED IN CHE MODO?</b>
       </p>
 
-<p class="p4" >
+<p class="p4" id="p20t" >
 Come previsto dal GDPR, qualora Tu abbia prestato il consenso al Trattamento dei Tuoi Dati Personali per una o più finalità per le quali Ti è stato richiesto, potrai, in qualsiasi momento, revocarlo totalmente e/o parzialmente senza pregiudicare la liceità del Trattamento basata sul consenso prestato prima della revoca. Le modalità di revoca del consenso sono molto semplici ed intuitive, Ti basterà contattare il Titolare utilizzando i canali di contatto riportarti all'interno della clausola n. 7 della presente informativa.
 
 
 </p> 
 
-<p class="p3">
+<p class="p3" id="p21t">
         <b>7. QUALI SONO I TUOI DIRITTI?</b>
       </p>
 
-<p class="p4">
+<p class="p4" id="p22t">
 Come previsto dall'art. 15 del GDPR , potrai accedere ai Tuoi Dati Personali , chiederne la rettifica e l'aggiornamento, se incompleti od erronei, chiederne la cancellazione qualora la raccolta sia avvenuta in violazione di una legge o di un regolamento, nonché opporti al Trattamento per motivi legittimi e specifici.
 In particolare, ti riportiamo di seguito tutti i Tuoi diritti che potrai esercitare, in qualsiasi momento, nei confronti del Titolare: <br>
 <br><br><b>- Diritto di accesso</b>: avrai il diritto, a norma dell'art. 15, comma 1, GDPR, di ottenere dal Titolare la conferma che sia o meno in corso un Trattamento dei Tuoi Dati Personali ed in tal caso, di ottenere l'accesso a tali Dati Personali ed alle seguenti informazioni: a) le finalità del Trattamento; b) le categorie di Dati Personali in questione; c) i Destinatari o le categorie di Destinatari a cui i Tuoi Dati Personali sono stati o saranno comunicati, in particolare se Destinatari di paesi terzi od organizzazioni internazionali; d) quando possibile, il periodo di conservazione dei Dati Personali previsto oppure, se non è possibile, i criteri utilizzati per determinare tale periodo; e) l'esistenza del diritto dell'Interessato di chiedere al Titolare la rettifica o la cancellazione dei Dati Personali o la limitazione del Trattamento dei Dati Personali che lo riguardano o di opporsi al loro Trattamento; f) il diritto di proporre reclamo ad un'autorità di controllo; g) qualora i Dati Personali non siano raccolti presso l'Interessato , tutte le informazioni disponibili sulla loro origine; h) l'esistenza di un processo decisionale automatizzato, compresa la profilazione di cui all'art. 22, commi 1 e 4, GDPR ed, almeno in tali casi, informazioni significative sulla logica utilizzata, nonché l'importanza e le conseguenze previste di tale Trattamento per l'Interessato. Tutte queste informazioni potrai rinvenirle all'interno della presente Informativa che sarà sempre a tua disposizione all'interno della sezione Privacy del Sito Web.
@@ -187,7 +201,7 @@ In particolare, ti riportiamo di seguito tutti i Tuoi diritti che potrai esercit
 
 </p> 
 
-<p  class="p4">
+<p  class="p4"  id="p23t">
 Per esercitare tutti i Tuoi diritti come sopra identificati, ti basterà contattare il Titolare nelle seguenti modalità: <br>
 - tramite lettera raccomandata inviata a Hotel Ristorante ANTICA MARINA con sede Corso Giuseppe Garibaldi 89844 Nicotera Marina, (VV) Calabria - ITALY <br>
 - tramite fax al numero +39 0963 81269; <br>
@@ -195,10 +209,10 @@ Per esercitare tutti i Tuoi diritti come sopra identificati, ti basterà contatt
 </p>
 
 
-<p class="p3" >
+<p class="p3" id="p24t" >
         <b>8. DOVE SARANNO TRATTATI I TUOI DATI PERSONALI?</b>
       </p>
-<p class="p4">
+<p class="p4" id="p25t">
 I Tuoi Dati Personali saranno trattati dal Titolare all'interno del territorio dell'Unione Europea. Qualora per questioni di natura tecnica e/o operativa si rendesse necessario avvalersi di soggetti ubicati al di fuori dell'Unione Europea, ti informiamo sin d'ora che tali soggetti saranno nominati responsabili del Trattamento ai sensi e per gli effetti di cui all'art. 28 GDPR ed il trasferimento dei Tuoi Dati Personali a tali soggetti, limitatamente allo svolgimento di specifiche attività di Trattamento, sarà regolato in conformità a quanto previsto dal capo V del GDPR ed, in particolare, saranno adottate tutte le cautele necessarie al fine di garantire la più totale protezione dei Tuoi Dati Personali basando tale trasferimento:
 <br><br> - a) su decisioni di adeguatezza dei paesi terzi destinatari espresse dalla Commissione Europea;
 <br><br> - b) su garanzie adeguate espresse dal soggetto terzo destinatario ai sensi dell'art. 46 GDPR.
@@ -207,8 +221,10 @@ I Tuoi Dati Personali saranno trattati dal Titolare all'interno del territorio d
 
 
 </div>
-   
+  <div style="height: 100px;" id="gothere"></div> 
 <div id="the_place_where_iframe_will_be_installed"></div>
+<p id="promo"  class="p5">Se prenoti direttamente con noi, riceverai uno sconto sul prezzo finale. In caso di cancellazione, ti verrà rilasciato un voucher valido fino al prossimo anno.</p>
+
 
 
 
@@ -222,11 +238,11 @@ I Tuoi Dati Personali saranno trattati dal Titolare all'interno del territorio d
    <div style="text-align: center; padding-top: 10px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: small;">P.Iva: 03604360796</div> 
    
    <div style="text-align: center; padding-top: 30px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: medium;">
-   <a href="contatti.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Contatti</a> 
+   <a href="contatti.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;" id="contatti"> Contatti</a> 
     <a href="privacy.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Privacy</a>
     <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Cookie Policy</a>
-    <a href="datisocietari.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Dati societari</a>
-    <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Accessibilità</a>
+    <a href="datisocietari.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"  id="info"> Dati societari</a>
+    <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;" id="acce"> Accessibilità</a>
    </div>
 
    <div style="text-align: center; padding-top: 30px; padding-bottom: 10px;">
@@ -242,23 +258,5 @@ I Tuoi Dati Personali saranno trattati dal Titolare all'interno del territorio d
 </div> 
 </div>
 </body>
-<script>
-   var url= 'https://wubook.net/nneb/bk?f=today&n=1&ep=ede5c73f&o=1.0.0.0';
-  var target= '#the_place_where_iframe_will_be_installed';
-  var Neb= new ZakNebIframe(target, url);
-  Neb.render();
- window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-</script>
+<script src="js/privacy.js"></script>
 </html>

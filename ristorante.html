@@ -15,32 +15,47 @@
 <body style="margin:0%;" >
   <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
     <div class="div1">
+      <span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
       <a href="index.html"  style="text-decoration: none;">
       <img src="imagewebp/logo.webp" class="logoc"   alt="logo" style="width: 200px;">
       </a>
+      <a onclick="go1()">
+        <img src="icons/prenota.svg" alt="logo"  class="icop" style="width: 35px;">
+      </a>
+      
+        <button id="buttone" style="font-size:25px;font-family: 'Lora', serif; color: #c6a310;  background: transparent;  border: none !important; " class="a2" onclick="go1()">
+       
+        Prenota & Risparmia
+        </button>
       <a id="hotel"   class="a1" href="Hotel.html">Hotel</a>
-      <a  class="a2"  aria-colcount="a2" href="Camere.html">Camere</a>
-      <a  class="a2" href="servizi.html" >Servizi</a>
-       <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #c6a310; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px;" >Ristorante</a><div class="dropdown-content"><a href="eventi.html">Eventi</a></div></div>
-      <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none; " href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html">Da visitare</a></div></div>
+      <a  class="a2" id="room"  aria-colcount="a2" href="Camere.html">Camere</a>
+      <a  class="a2" id="service" href="servizi.html" >Servizi</a>
+       <div class="dropdown"><a  id="risto"   class="dropbtn" style="font-family: 'Lora'; color: #c6a310; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px;" >Ristorante</a><div class="dropdown-content"><a id="eve" href="eventi.html">Eventi</a></div></div>
+      <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none; " id="where" href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html" id="visit">Da visitare</a></div></div>
       <a class="a2"  href="gallery.html" >Gallery</a>
-      <a class="a2"  href="offerte.html" >Offerte</a>
-      <a  class="a2" >Prenota</a>
+      <a class="a2" id="deal"  href="offerte.html" >Offerte</a>
+         <figure  class="reserv">
+       <a onclick="go1()">
+       <img src="icons/prenota.svg" alt="logo"  style="width: 50px;">
+       <figcaption style=" color: #c6a310; " id="buttone2">Prenota</figcaption>
+       </a>
+   </figure>
+     
       <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   
-  <a class="a3"   href="#">Hotel</a>
-  <a class="a3"  href="#">Camere</a>
-  <a class="a3" href="#">Servizi</a>
-  <a class="a3">Ristorante</a>
-  <a class="a3">Eventi</a>
-  <a class="a3">Dove siamo</a>
-  <a class="a3">Da visitare</a>
-  <a class="a3"  href="#">Gallery</a>
-  <a  class="a3" >Offerte</a>
+  <a class="a3"   href="Hotel.html">Hotel</a>
+  <a class="a3"  id="room2" href="Camere.html">Camere</a>
+  <a class="a3" id="service2" href="servizi.html">Servizi</a>
+  <a class="a3" id="risto2" href="ristorante.html" >Ristorante</a>
+  <a class="a3" id="eve2" href="eventi.html">Eventi</a>
+  <a class="a3" id="where2" href="dovesiamo.html">Dove siamo</a>
+  <a class="a3" id="visit2" href="davisitare.html">Da visitare</a>
+  <a class="a3"  href="gallery.html">Gallery</a>
+  <a  class="a3" id="deal2" href="offerte.html" >Offerte</a>
 </div>
       
-<span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
+
    
    
  
@@ -87,20 +102,20 @@
 </div>
     
 <div class="div2">
-<div class="div3">Ristorante</div>
-<p class="p1">Il sapore autentico della vera cucina mediterranea</p>
+<div class="div3" id="d1t">Ristorante</div>
+<p class="p1" id="p1t">Il sapore autentico della vera cucina mediterranea</p>
 <p class="p2">LOCATION</p>
-<p class="p3">
+<p class="p3" id="p2t">
 Un ambiente accogliente e raffinato e nel contempo familiare, dove nulla è lasciato al caso.
 L’accoglienza calda e sincera del nostro personale vi fa sentire come a casa mentre il profumo ed il gusto autentici della nostra <b>CUCINA MEDITERRANEA</b>  sono in grado di deliziare persino i palati più esigenti.Antica Marina è la location ideale per una <b>cena romantica</b>  o una <b>serata tra amici</b>  ma è altrettanto perfetta per <b>cene</b> o  <b>pranzi aziendali</b>  o ancora per  <B>festeggiare le occasioni speciali</B>.
 </p>
-<p class="p4">SPECIALITA' DELLA NOSTRA CUCINA MEDITERRANEA</p>
-<p  class="p5">
+<p class="p4" id="p3t" >SPECIALITA' DELLA NOSTRA CUCINA MEDITERRANEA</p>
+<p  class="p5" id="p4t">
 Il Pesce domina la nostra cucina con specialità di <b>pesce fresco</b> e <b>frutti di mare</b>. <br>
 Assolutamente da assaggiare è lo <b>Stocco di Cittanova</b> preparato in mille modi dalle sapiente mani del nostro chef.
 Accompagnano tutti i nostri piatti, le verdure e gli ortaggi tipici del nostro territorio, rigorosamente a km 0.
 </p>
-<div class="div4"><a style="text-decoration: none; font-size: 13px;font-family: 'Open Sans', sans-serif; color: white; " href="eventi.html">EVENTI ED OCCASIONI SPECIALI</a></div>
+<div class="div4"><a id="a1t" style="text-decoration: none; font-size: 13px;font-family: 'Open Sans', sans-serif; color: white; " href="eventi.html">EVENTI ED OCCASIONI SPECIALI</a></div>
 
 </div>
 
@@ -148,11 +163,12 @@ Accompagnano tutti i nostri piatti, le verdure e gli ortaggi tipici del nostro t
 </div>
 
 </div>
+<div style="height: 100px;" id="gothere"></div> 
 <div id="the_place_where_iframe_will_be_installed" ></div>
+<p id="promo"  class="p6">Se prenoti direttamente con noi, riceverai uno sconto sul prezzo finale. In caso di cancellazione, ti verrà rilasciato un voucher valido fino al prossimo anno.</p>
+
+
 <div style="width: 100%; height: auto;background-color: #0c3583; ">
-
-
-
 <img src="imagewebp/logofooter.png" style="width: 200px;display: block; padding-top: 10px;
   margin-left: auto;
   margin-right: auto;">
@@ -162,11 +178,11 @@ Accompagnano tutti i nostri piatti, le verdure e gli ortaggi tipici del nostro t
    <div style="text-align: center; padding-top: 10px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: small;">P.Iva: 03604360796</div> 
    
    <div style="text-align: center; padding-top: 30px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: medium;">
-   <a href="contatti.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Contatti</a> 
+   <a href="contatti.html" id="contatti" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Contatti</a> 
     <a href="privacy.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Privacy</a>
     <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Cookie Policy</a>
-    <a href="datisocietari.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Dati societari</a>
-    <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Accessibilità</a>
+    <a href="datisocietari.html" id="info" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Dati societari</a>
+    <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;" id="acce"> Accessibilità</a>
    </div>
 
    <div style="text-align: center; padding-top: 30px; padding-bottom: 10px;">
@@ -183,78 +199,5 @@ Accompagnano tutti i nostri piatti, le verdure e gli ortaggi tipici del nostro t
 </div>
   
 </body>
-<script>
-  
-  /* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-
-  var url= 'https://wubook.net/nneb/bk?f=today&n=1&ep=ede5c73f&o=1.0.0.0';
-  var target= '#the_place_where_iframe_will_be_installed';
-  var Neb= new ZakNebIframe(target, url);
-  Neb.render();
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-  
-
-let slideIndex = 0;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-  
-}
-
-showSlides2();
-
-function showSlides2() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  let dots = document.getElementsByClassName("dot");
-
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides2, 10000); // Change image every 2 seconds
-}
- 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-   
-}
-
-
-</script>
+<script src="js/ristorante.js"></script>
 </html>

@@ -10,75 +10,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="css/offerte.css" rel="stylesheet">
-<style>
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-     </style>
 </head>
 
 <body style="margin:0%;" >
   <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
      
     <div class="div1">
+        <span class="hide"  onclick="openNav()"><img src="icons/menu.svg" style=" width: 40px; margin-bottom: 1%;"></span>
       <a href="index.html" style="text-decoration: none;">
       <img src="imagewebp/logo.webp" alt="logo"  class="logos"  style="width: 200px;">
       </a>
-       <span class="hide"  onclick="openNav()"><img src="icons/menu.svg" style=" width: 40px; margin-bottom: 1%;"></span>
-      <a id="hotel" class="a1" href="Hotel.html">Hotel</a>
-      <a class="a2"    href="Camere.html">Camere</a>
-      <a  class="a2"  href="servizi.html" >Servizi</a>
-       <div class="dropdown"><a class="dropbtn" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a href="eventi.html">Eventi</a></div></div>
-      <div class="dropdown"><a class="dropbtn" href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html">Da visitare</a></div></div>
-      <a class="a2"  href="gallery.html" >Gallery</a>
-      <a  class="a3" >Offerte</a>
-      <a  class="a2"  >Prenota</a>
-      <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <select style="margin-left: 35px; width: 70px ">
-   <option>IT</option>
-   <option>ENG</option>
-   
-
-  </select>
-
-  
-  <a class="a3"   href="#">Hotel</a>
-  <a class="a3"  href="#">Camere</a>
-  <a class="a3" href="#">Servizi</a>
-  <a class="a3">Ristorante</a>
-  <a class="a3">Eventi</a>
-  <a class="a3">Dove siamo</a>
-  <a class="a3">Da visitare</a>
-  <a class="a3"  href="#">Gallery</a>
-  <a  class="a3" >Offerte</a>
-</div>
-      <select class="select1">
-     
-      <option value="" >ITA</option>
-      <option value="">ENG</option>
+      <a onclick="go1()">
+        <img src="icons/prenota.svg" alt="logo"  class="icop" style="width: 35px;">
+      </a>
       
-      </select>
-   
-   </select>
+        <button id="buttone" style="font-size:25px;font-family: 'Lora', serif; color: #c6a310;  background: transparent;  border: none !important; " class="a2" onclick="go1()">
+       
+        Prenota & Risparmia
+        </button>
+      <a id="hotel" class="a1" href="Hotel.html">Hotel</a>
+      <a class="a2"  id="room"  href="Camere.html">Camere</a>
+      <a  class="a2" id="service" href="servizi.html" >Servizi</a>
+       <div class="dropdown"><a class="dropbtn" id="risto" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a id="eve" href="eventi.html">Eventi</a></div></div>
+      <div class="dropdown"><a class="dropbtn" id="where" href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a id="visit" href="davisitare.html">Da visitare</a></div></div>
+      <a class="a2"  href="gallery.html" >Gallery</a>
+      <a  class="a3" id="deal" >Offerte</a>
+    <figure  class="reserv">
+       <a onclick="go1()">
+       <img src="icons/prenota.svg" alt="logo"  style="width: 50px;">
+       <figcaption style=" color: #c6a310; " id="buttone2">Prenota</figcaption>
+       </a>
+   </figure>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="a3"  href="Hotel.html">Hotel</a>
+  <a class="a3" id="room1"   href="Camere.html">Camere</a>
+  <a class="a3" id="service2" href="servizi.html">Servizi</a>
+  <a class="a3" id="risto2" href="ristorante.html">Ristorante</a>
+  <a class="a3" id="eve2" href="eventi.html">Eventi</a>
+  <a class="a3" id="where2" href="dovesiamo.html">Dove siamo</a>
+  <a class="a3" id="visit2" href="davisitare.html">Da visitare</a>
+  <a class="a3"  href="gallery.html">Gallery</a>
+  <a  class="a3" id="deal2" href="offerte.html"  >Offerte</a>
+</div>
+    
     </div>
     
-    <img src="offerte2.webp" style="width: 100%; height: 10%;">
-<div class="div2">Offerte</div>  
-    
+    <img src="imagewebp/offerte2.webp" style="width: 100%; height: 10%;">
+<div class="div2" id="deal3">Offerte</div>  
+<div style="height: 100px;" id="gothere"></div>
 <div id="the_place_where_iframe_will_be_installed"></div>
+<p id="promo"  class="p4">Se prenoti direttamente con noi, riceverai uno sconto sul prezzo finale. In caso di cancellazione, ti verrà rilasciato un voucher valido fino al prossimo anno.</p>
+
 
 
 
@@ -90,11 +74,11 @@
    <div class="div4">P.Iva: 03604360796</div> 
    
    <div class="div5">
-   <a href="contatti.html" class="a5" > Contatti</a> 
+   <a href="contatti.html" id="contatti" class="a5" > Contatti</a> 
     <a href="privacy.html" class="a5" > Privacy</a>
     <a href="#" class="a5"  > Cookie Policy</a>
-    <a href="datisocietari.html" class="a5"> Dati societari</a>
-    <a href="#" class="a5" > Accessibilità</a>
+    <a href="datisocietari.html" id="info" class="a5"> Dati societari</a>
+    <a href="#" class="a5" id="acce" > Accessibilità</a>
    </div>
 
    <div class="div7">
@@ -110,25 +94,5 @@
 </div> 
 </div>
 </body>
-<script>
-
-  var url= 'https://wubook.net/nneb/bk?f=today&n=1&ep=ede5c73f&o=1.0.0.0';
-  var target= '#the_place_where_iframe_will_be_installed';
-  var Neb= new ZakNebIframe(target, url);
-  Neb.render();
-    function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-
-
-
-</script>
+<script src="js/offerte.js"></script>
 </html>

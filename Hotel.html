@@ -12,33 +12,51 @@
     <link href="css/hotel.css" rel="stylesheet">
 </head>
 <body style="margin:0%;" >
+  <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
    <div class="div1">
+    <span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
       <a href="index.html" style="text-decoration: none;">
       <img src="imagewebp/logo.webp" alt="logo" class="logoc" style="width: 200px;">
       </a>
+      <a onclick="go1()">
+        <img src="icons/prenota.svg" alt="logo"  class="icop" style="width: 35px;">
+      </a>
+      
+        <button id="buttone"  class="rp1" style="font-size:25px;font-family: 'Lora', serif; color: #c6a310;  background: transparent;  border: none !important; "  onclick="go1()">
+       
+        Prenota & Risparmia
+        </button>
       <a  class="a1"  href="Hotel.html">Hotel</a>
-      <a   class="a2" href="Camere.html" >Camere</a>
-      <a  class="a2"  href="servizi.html" >Servizi</a>
-       <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a href="eventi.html">Eventi</a></div></div>
-      <div class="dropdown"><a class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none; " href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html">Da visitare</a></div></div>
+      <a   class="a2" id="room" href="Camere.html" >Camere</a>
+      <a  class="a2" id="service"  href="servizi.html" >Servizi</a>
+       <div class="dropdown"><a  id="risto" class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none;" href="ristorante.html">Ristorante</a><div class="dropdown-content"><a id="eve" href="eventi.html">Eventi</a></div></div>
+      <div class="dropdown"><a id="where" class="dropbtn" style="font-family: 'Lora'; color: #0c3583; text-decoration: none; " href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a id="visit" href="davisitare.html">Da visitare</a></div></div>
       <a  class="a2"   href="gallery.html" >Gallery</a>
-      <a  class="a2"  href="offerte.html" >Offerte</a>
-      <a  class="a2"  >Prenota</a>
+      <a  class="a2"  id="deal" href="offerte.html" >Offerte</a>
+      
+
+   <figure  class="reserv" >
+       <a onclick="go1()">
+       <img src="icons/prenota.svg" alt="logo"  style="width: 50px;">
+       <figcaption style=" color: #c6a310; " id="buttone2" >Prenota</figcaption>
+       </a>
+   </figure>
+
        <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
  
-  <a class="a3"   href="#">Hotel</a>
-  <a class="a3"  href="#">Camere</a>
-  <a class="a3" href="#">Servizi</a>
-  <a class="a3">Ristorante</a>
-  <a class="a3">Eventi</a>
-  <a class="a3">Dove siamo</a>
-  <a class="a3">Da visitare</a>
-  <a class="a3"  href="#">Gallery</a>
-  <a  class="a3" >Offerte</a>
+  <a class="a3"   href="Hotel.html">Hotel</a>
+  <a class="a3" id="room2" href="Camere.html">Camere</a>
+  <a class="a3" id="service2" href="servizi.html">Servizi</a>
+  <a class="a3" id="risto2" href="ristorante.html">Ristorante</a>
+  <a class="a3" id="eve2" href="eventi.html">Eventi</a>
+  <a class="a3" id="where2" href="dovesiamo.html">Dove siamo</a>
+  <a class="a3" id="visit2" href="davisitare.html">Da visitare</a>
+  <a class="a3"  href="gallery.html">Gallery</a>
+  <a  class="a3"id="deal2"  href="offerte.html">Offerte</a>
 </div>
       
-<span class="hide"     onclick="openNav()"><img src="icons/menu.svg" style="width: 50px; margin-bottom: 1%;"></span>
+
 
      
      
@@ -89,18 +107,18 @@
 <div class="div2">
 
 <div class="div3">Hotel</div>
-<div class="div4">Il fascino di un'antica dimora nobiliare</div>
-<div class="div5">Antica residenza nobiliare a pochi metri dal mare trasformata in  hotel dotato di tutti i comfort per soddisfare anche i clienti più esigenti.</div>
-<div class="div5">Ogni ospite è <b>unico</b> e <b>speciale</b>,  il nostro impegno quotidiano è volto ad intercettarne ogni desiderio e soddisfarlo per un soggiorno di pieno relax.</div>
-<div class="div6">Il nostro obiettivo? Emozionarvi offrendovi un’esperienza unica e indimenticabile.</div>
+<div class="div4" id="d1t">Il fascino di un'antica dimora nobiliare</div>
+<div class="div5" id="d2t" >Antica residenza nobiliare a pochi metri dal mare trasformata in  hotel dotato di tutti i comfort per soddisfare anche i clienti più esigenti.</div>
+<div class="div5" id="d3t">Ogni ospite è <b>unico</b> e <b>speciale</b>,  il nostro impegno quotidiano è volto ad intercettarne ogni desiderio e soddisfarlo per un soggiorno di pieno relax.</div>
+<div class="div6" id="d4t" >Il nostro obiettivo? Emozionarvi offrendovi un’esperienza unica e indimenticabile.</div>
 </div>
 
 <div class="div7">
 <img src="imagewebp/1024-camere-rooms.webp" class="img1">
   <div class="div8">
-    <div class="div9">Le Camere</div>
-    <p class="div10">Accoglienti e luminose, le nostre camere sono dotate di ogni comfort per farvi sentire come a casa e garantirvi un soggiorno all’insegna del relax.</p>
-    <div class="div11"> <a style="text-decoration: none;  font-size: 13px;font-family: 'Open Sans', sans-serif; color: white;" href="Camere.html">Scopri di più</a></div>
+    <div class="div9" id="d5t">Le Camere</div>
+    <p class="div10" id="d6t">Accoglienti e luminose, le nostre camere sono dotate di ogni comfort per farvi sentire come a casa e garantirvi un soggiorno all’insegna del relax.</p>
+    <div class="div11"> <a style="text-decoration: none;  font-size: 13px;font-family: 'Open Sans', sans-serif; color: white;" href="Camere.html" id="a1t"   id="a1t">Scopri di più</a></div>
 
   </div>
 
@@ -112,9 +130,9 @@
 <div class="div12">
 
   <div class="div13">
-    <p class="p1">Il Ristorante</p>
-    <p class="p2">Un ambiente accogliente e raffinato e nel contempo familiare, dove nulla è lasciato al caso. L’accoglienza calda e sincera del nostro personale vi fa sentire come a casa mentre il profumo ed il gusto autentici della nostra CUCINA MEDITERRANEA sono in grado di deliziare persino i palati più esigenti.</p>
-    <div class="div14"><a style="text-decoration: none; font-size: 13px; font-family: 'Open Sans', sans-serif; color: white;" href="ristorante.html">Scopri di più</a></div>
+    <p class="p1" id="p1t">Il Ristorante</p>
+    <p class="p2" id="p2t">Un ambiente accogliente e raffinato e nel contempo familiare, dove nulla è lasciato al caso. L’accoglienza calda e sincera del nostro personale vi fa sentire come a casa mentre il profumo ed il gusto autentici della nostra CUCINA MEDITERRANEA sono in grado di deliziare persino i palati più esigenti.</p>
+    <div class="div14"><a style="text-decoration: none; font-size: 13px; font-family: 'Open Sans', sans-serif; color: white;" href="ristorante.html" id="a2t">Scopri di più</a></div>
 
   </div>
 <img src="imagewebp/1024-restaurant.webp" class="img2">
@@ -124,6 +142,9 @@
 </div>
 
    
+<div style="height: 100px;" id="gothere"></div>
+<div id="the_place_where_iframe_will_be_installed"></div>
+<p id="promo"  class="p4">Se prenoti direttamente con noi, riceverai uno sconto sul prezzo finale. In caso di cancellazione, ti verrà rilasciato un voucher valido fino al prossimo anno.</p>
 
 
 
@@ -138,11 +159,11 @@
    <div style="text-align: center; padding-top: 10px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: small;">P.Iva: 03604360796</div> 
    
    <div style="text-align: center; padding-top: 30px; color: #ffffff;font-family: 'Open Sans', sans-serif; font-size: medium;">
-   <a href="contatti.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Contatti</a> 
+   <a href="contatti.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;" id="contatti"> Contatti</a> 
     <a href="privacy.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Privacy</a>
     <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Cookie Policy</a>
-    <a href="datisocietari.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Dati societari</a>
-    <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;"> Accessibilità</a>
+    <a href="datisocietari.html" style="color: #c6a310; text-decoration: none; margin-left: 5px;" id="info"> Dati societari</a>
+    <a href="#" style="color: #c6a310; text-decoration: none; margin-left: 5px;" id="acce"> Accessibilità</a>
    </div>
 
    <div style="text-align: center; padding-top: 30px; padding-bottom: 10px;">
@@ -159,74 +180,5 @@
 </div>
   
 </body>
-<script>
-
-
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-  
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-
-
-
-let slideIndex = 0;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-  
-}
-
-showSlides2();
-
-function showSlides2() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  let dots = document.getElementsByClassName("dot");
-
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides2, 10000); // Change image every 2 seconds
-}
- 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-   
-}
-
-</script>
+<script src="js/hotel.js"></script>
 </html>

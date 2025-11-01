@@ -50,11 +50,15 @@
 
 
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1900px) {
 .hide{
 display: none;
 
 
+}
+
+.reserv{
+  display: none;
 }
 @keyframes fade {
   from {opacity: .4}
@@ -114,13 +118,15 @@ position: fixed;
 
 
 }
-
+.icop{
+  margin-left: 700px;
+}
 
 
 .a1{
     color: #0c3583;
     font-family: 'Lora', serif; 
-    margin-left: 48%; 
+    margin-left: 10px; 
     text-decoration: none;
 
 
@@ -175,18 +181,33 @@ margin-top: 2%;
 
 }
 
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 1200px;
+    margin-left: 370px;
+    user-select: none;
+    
+}
+
 }
 
 
 
 
-@media screen and (min-width: 1800px) and (max-width:1920px) {
+@media screen and (min-width: 1800px) and (max-width:1900px) {
 
 .hide{
 display: none;
 
 
 }
+
+.reserv{
+  display: none;
+}
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -246,12 +267,16 @@ position: fixed;
 
 }
 
+.icop{
+  display: inline-block;
+  margin-left: 600px;
+}
 
 
 .a1{
     color: #0c3583;
     font-family: 'Lora', serif; 
-    margin-left: 48%; 
+    margin-left:10px; 
     text-decoration: none;
 
 
@@ -304,6 +329,16 @@ margin-top: 2%;
      margin-top: 1%;
 
 
+}
+
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 1200px;
+    margin-left: 310px;
+    user-select: none;
+    
 }
 
 }
@@ -327,6 +362,9 @@ display: none;
   font-size: 16px;
   border: none;
 }
+.reserv{
+  display: none;
+}
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -375,12 +413,16 @@ position: fixed;
 
 }
 
+.icop{
+margin-left: 500px;
 
+
+}
 
 .a1{
     color: #0c3583;
     font-family: 'Lora', serif; 
-    margin-left: 750px; 
+    margin-left: 10px; 
     text-decoration: none;
 
 
@@ -435,6 +477,15 @@ margin-top: 2%;
 
 }
 
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 1200px;
+    margin-left: 250px;
+    user-select: none;
+    
+}
+
 }
 
 
@@ -444,6 +495,10 @@ margin-top: 2%;
 .hide{
     display: none;
 }
+.reserv{
+  display: none;
+}
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -503,12 +558,17 @@ position: fixed;
 
 }
 
+.icop{
+margin-left: 400px;
 
+
+
+}
 
 .a1{
     color: #0c3583;
     font-family: 'Lora', serif; 
-    margin-left: 700px; 
+    margin-left: 10px; 
     text-decoration: none;
 
 
@@ -562,6 +622,16 @@ margin-top: 2%;
 
 
 }
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 1200px;
+    margin-left: 200px;
+    user-select: none;
+    
+}
+
 
 }
 
@@ -574,6 +644,13 @@ margin-top: 2%;
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.reserv{
+display: none;
+
+
+}
+
 .dropbtn {
   
   color: #0c3583;
@@ -629,12 +706,16 @@ position: fixed;
 
 }
 
+.icop{
+margin-left: 300px;
 
+
+}
 
 .a1{
     color: #0c3583;
     font-family: 'Lora', serif; 
-    margin-left: 520px; 
+    margin-left: 10px; 
     text-decoration: none;
 
 
@@ -687,6 +768,16 @@ margin-top: 2%;
      margin-top: 1%;
 
 
+}
+
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 1200px;
+    margin-left: 150px;
+    user-select: none;
+    
 }
 
 }
@@ -701,6 +792,10 @@ display: none;
   from {opacity: .4}
   to {opacity: 1}
 }
+.reserv{
+  display: none;
+}
+
 .dropbtn {
   
   color: #0c3583;
@@ -756,12 +851,14 @@ position: fixed;
 
 }
 
-
+.icop{
+  margin-left: 200px;
+}
 
 .a1{
     color: #0c3583;
     font-family: 'Lora', serif; 
-    margin-left: 510px; 
+    margin-left: 10px; 
     text-decoration: none;
 
 
@@ -816,16 +913,22 @@ margin-top: 2%;
 
 }
 
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 1200px;
+    margin-left: 100px;
+    user-select: none;
+    
+}
+
 }
 
 @media screen and (min-width: 1300px) and (max-width:1400px) {
-.hide{
-margin-left: 400px;
-
-}
 
 .logoc{
-margin-left: 523px;
+margin-left: 475px;
 
 
 }
@@ -834,9 +937,19 @@ margin-left: 523px;
   from {opacity: .4}
   to {opacity: 1}
 }
+.icop{
+  display: none;
+}
+
 .dropbtn {
   display: none;
 }
+
+.reserv{
+  display: inline-block;
+  margin-left: 400px;
+}
+
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -938,6 +1051,16 @@ margin-top: 2%;
      margin-top: 1%;
 
 
+}
+
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 1200px;
+    margin-left: 50px;
+    user-select: none;
+    
 }
 
 
@@ -946,16 +1069,26 @@ margin-top: 2%;
 
 
 @media screen and (min-width:1200px) and (max-width:1300px) {
-.hide{
-margin-left: 400px;
 
-}
 
 .logoc{
-margin-left: 473px;
+margin-left: 420px;
 
 
 }
+
+
+.icop{
+  display: none;
+}
+
+.reserv{
+  display: inline-block;
+  margin-left: 360px;
+}
+
+
+
 
 @keyframes fade {
   from {opacity: .4}
@@ -1065,21 +1198,36 @@ margin-top: 2%;
      margin-top: 1%;
 
 
+}
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 1100px;
+    margin-left: 35px;
+    user-select: none;
+    
 }
 
 }
 
 
 @media screen and (min-width: 1100px) and (max-width:1200px){
-.hide{
-margin-left: 360px;
 
-}
 
 .logoc{
-margin-left: 423px;
+margin-left: 370px;
 
 
+}
+.icop{
+  display: none;
+}
+
+
+.reserv{
+  display: inline-block;
+  margin-left: 300px;
 }
 
 @keyframes fade {
@@ -1190,18 +1338,38 @@ margin-top: 2%;
      margin-top: 1%;
 
 
+}
+
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 950px;
+    margin-left: 50px;
+    user-select: none;
+    
 }
 
 }
 
 @media screen and (min-width: 1000px) and (max-width:1100px){
-.hide{
-margin-left: 260px;
+
+
+.logoc{
+margin-left: 320px;
+
 
 }
 
-.logoc{
-margin-left: 373px;
+.icop{
+display: none;
+
+
+}
+
+.reserv{
+display: inline-block;
+margin-left: 300px ;
 
 
 }
@@ -1314,20 +1482,36 @@ margin-top: 2%;
      margin-top: 1%;
 
 
+}
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 900px;
+    margin-left: 50px;
+    user-select: none;
+    
 }
 
 }
 
 
 @media screen and (min-width: 800px) and (max-width:1000px){
-.hide{
-margin-left: 160px;
+
+
+.logoc{
+margin-left: 220px;
+
 
 }
 
-.logoc{
-margin-left: 273px;
+.icop{
+  display: none;
+}
 
+.reserv{
+  display: inline-block;
+  margin-left: 200px;
 
 }
 
@@ -1439,19 +1623,36 @@ margin-top: 2%;
      margin-top: 1%;
 
 
+}
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 700px;
+    margin-left: 30px;
+    user-select: none;
+    
 }
 
 }
 
 @media screen and (min-width: 600px) and (max-width:800px){
-.hide{
-margin-left: 100px;
+
+
+.logoc{
+margin-left: 120px;
+
 
 }
 
-.logoc{
-margin-left: 173px;
+.icop{
+display: none;
 
+}
+
+.reserv{
+display: inline-block;
+margin-left: 100px;
 
 }
 
@@ -1563,6 +1764,15 @@ margin-top: 2%;
      margin-top: 1%;
 
 
+}
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 550px;
+    margin-left: 10px;
+    user-select: none;
+    
 }
 
 
@@ -1571,15 +1781,22 @@ margin-top: 2%;
 
 
 @media screen and (min-width: 0px) and (max-width: 600px){
-.hide{
-margin-left: 70px;
+
+
+.logoc{
+margin-left: 68px;
+
 
 }
 
-.logoc{
-margin-left: 123px;
+.reserv{
+display: inline-block;
 
 
+}
+
+.icop{
+  display: none;
 }
 
 @keyframes fade {
@@ -1690,6 +1907,18 @@ margin-top: 2%;
      margin-top: 1%;
 
 
+
+}
+
+
+
+.p5{
+    font-family: 'Lora', serif; 
+    font-size: 20px;
+    width: 450px;
+    margin-left: 10px;
+    user-select: none;
+    
 }
 
 }
