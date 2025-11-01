@@ -21,13 +21,20 @@
   <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
     <div class="div1">
        
-      
+       <span class="hide"  onclick="openNav()"><img src="icons/menu.svg" style=" width: 40px;"></span>
       <a href="index.html" class="logoc" style="text-decoration: none; ">
        <img src="imagewebp/logo.webp" alt="logo" class="img1">
       
        </a>
+     <a onclick="go1()">
+        <img src="icons/prenota.svg" alt="logo"  class="icop" style="width: 35px;">
+      </a>
+      
+        <button id="buttone" style="font-size:25px;font-family: 'Lora', serif; color: #c6a310;  background: transparent;  border: none !important; " class="a2" onclick="go1()">
        
-          <span class="hide"  onclick="openNav()"><img src="icons/menu.svg" style=" width: 40px;"></span>
+        Prenota & Risparmia
+        </button>  
+        
 
 
      
@@ -39,16 +46,16 @@
       <div class="dropdown"><a class="dropbtn"  href="dovesiamo.html">Dove siamo</a><div class="dropdown-content"><a href="davisitare.html">Da visitare</a></div></div>
       <a  class="a2"href="gallery.html" >Gallery</a>
       <a class="a2" href="offerte.html" >Offerte</a>
-      <a class="a2" >Prenota</a>
+        <figure  class="reserv">
+       <a onclick="go1()">
+       <img src="icons/prenota.svg" alt="logo"  style="width: 50px;">
+       <figcaption style=" color: #c6a310; " id="buttone2">Prenota</figcaption>
+       </a>
+   </figure>
       
       <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <select style="margin-left: 35px; width: 70px ">
-   <option>IT</option>
-   <option>ENG</option>
-   
-
-  </select>
+  
 
   
   <a class="a3"   href="#">Hotel</a>
@@ -61,12 +68,7 @@
   <a class="a3"  href="#">Gallery</a>
   <a  class="a3" >Offerte</a>
 </div>
-      <select class="select1">
-     
-      <option value="" >ITA</option>
-      <option value="">ENG</option>
       
-      </select>
    
    
     </div>
@@ -159,8 +161,10 @@
 </div>
 
 
-
+<div style="height: 100px;" id="gothere"></div> 
  <div id="the_place_where_iframe_will_be_installed"></div>  
+<p id="promo"  class="p5">Se prenoti direttamente con noi, riceverai uno sconto sul prezzo finale. In caso di cancellazione, ti verrà rilasciato un voucher valido fino al prossimo anno.</p>
+
 
 
 
@@ -195,31 +199,5 @@
 </div>
 </body>
 
-<script>
-
-
-
-  var url= 'https://wubook.net/nneb/bk?f=today&n=1&ep=ede5c73f&o=1.0.0.0';
-  var target= '#the_place_where_iframe_will_be_installed';
-  var Neb= new ZakNebIframe(target, url);
-  Neb.render();
-
-   function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-
-
-
-
-</script>
+<script src="js/servizi.js"></script>
 </html>
