@@ -19,12 +19,7 @@ function closeNav() {
 }
 
 
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-  window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
+
 
 
 var userLang = navigator.language || navigator.userLanguage;

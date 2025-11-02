@@ -10,9 +10,7 @@
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
+
 
 function go1(){
 

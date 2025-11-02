@@ -59,10 +59,6 @@ document.getElementById("gothere").scrollIntoView({behavior: 'smooth'});
 }
 
 
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-  
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }

@@ -20,9 +20,7 @@ function closeNav() {
   var target= '#the_place_where_iframe_will_be_installed';
   var Neb= new ZakNebIframe(target, url);
   Neb.render();
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
+
   
 
 let slideIndex = 0;

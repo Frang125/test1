@@ -27,10 +27,6 @@ function closeNav() {
 }
 
 
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
-  
 
 let slideIndex = 0;
 showSlides(slideIndex);

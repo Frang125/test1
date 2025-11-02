@@ -68,9 +68,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-  window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
-});
 
 let slideIndex = 0;
 showSlides(slideIndex);
